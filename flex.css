@@ -63,13 +63,42 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    height: fit-content;
+  }
+  
+  .quarter, .third {
+    width: calc(97% / 2);
+  }
 
-
-
+  [class^="box"]:last-child {
+    flex-grow: 1;
+  }
+}
 
 /* Mobile Styles*/
+@media screen and (max-width: 520px) {
+  .flex-container {
+    height: fit-content;
+  }
 
+  [class^="box"] {
+    width: 97%;
+    height: 150px;
+  }
+}
 
+/*
+
+RESPONSIVE LAYOUTS
+
+- @media screen targets the screen and it's properties.
+- using 'and (x)' will allow you to target the screen and a specific property. (max-width for example).
+- Important thing to note for Trion is the amount of information so responsive design is important to keep the website clean and simple.
+- Use relative units such as %s, vw, and vh to scale content. Specific values like pixels will make responsive design very hard because all values will have to be very specific and exact.
+
+*/
 
 
 
